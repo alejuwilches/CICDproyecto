@@ -1,0 +1,11 @@
+<StackLayout class="form">
+    <StackLayout class="input-field">
+      <TextField class="input"hint="Email" keyboardType="email" autocorrect="false"
+      autocapitalizationType="none" [(ngModel)="usuario.correo"]></TextField>
+    </StackLayout>
+  
+    <StackLayout class="input-field">
+      <TextField secure="true" class="input" hint="Password" [(ngModel)="usuario.contrasenia"]  autocapitalizationType="none"></TextField>
+    </StackLayout>
+<Button text="ingresar" (tap)="ingresar()" class="btn btn-primary"></Button>
+</StackLayout>
